@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <title>US Location Info </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: cursive;
+            background-image: url(location.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+        }
+        /*         
+        .container {
+            width: 500px;
+        } */
+        
+        .check,
+        .remove {
+            display: none;
+        }
+        
+        .header {
+            margin-top: 60px;
+        }
+        
+        #output {
+            height: 170px;
+        }
+        
+        footer {
+            background-color: rgba(255, 255, 255, 0.363);
+            height: 170px;
+        }
+        
+        .message {
+            background-color: rgba(255, 0, 0, 0.465);
+        }
+        
+        .cancel {
+            float: right;
+        }
+        
+        .footer-icons>span {
+            margin: 10px;
+        }
+        
+        @media(max-width:1021px) {
+            .container {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="block header">
+            <div class="hero hero-body is-black">
+                <h1 class="title is-4 is-family-primary has-text-weight-bold has-text-centered is-capitalized">Get U.S.A location info</h1>
+                <h2 class="subtitle">Use zipcode to get location infomation </h2>
+                <form id="zipform">
+                    <div class="field">
+                        <p class="control has-icons-left has-icons-right">
+                            <input type="text" class="input zip-value is-italic" placeholder="Enter zipcode here...">
+                            <span class="icon is-small is-left">
+                               <i class="fa fa-map-marker"></i>
+                            </span>
+                            <span class="icon is-small is-right check">
+                                <i class="fa fa-check"></i>
+                            </span>
+                            <span class="icon is-small is-right remove">
+                                <i class="fa fa-times"></i>
+                            </span>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="output">
+
+        </div>
+
+        <footer class="footer has-background-grey-light has-text-primary-light">
+            <div class="has-text-centered is-dark content">
+                <p>A simple US location info by <strong>Shadrach</strong></p>
+                <p><strong>Follow me</strong> on</p>
+
+                <div class="footer-icons">
+                    <span class="icon is-small">
+                        <a href="https://github.com/shelinz1"><i class="fa fa-github  is-size-3"></i></a>
+                    </span>
+                    <span class="icon is-small">
+                        <a href="https://twitter.com/Shadrac01490240"><i class="fa fa-twitter is-size-3"></i></a>
+                    </span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="location.js"></script>
+</body>
+
+</html>
